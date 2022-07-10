@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMongus</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--Boostrap core css-->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="assets/css/tooplate-main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video width="100%" height="1080px" autoplay src="imgs/Avatar2.mp4"></video>
+            <video width= "100%" height="1000px" autoplay src="/imgs/Avatar2.mp4"></video>
+            <!--
+         <!-- <img src="imgs/pelis/avatar.jpg" width="100%" height="100%">-->
+            <div class="container">
+                <div class="carousel-caption" style="top: 0px">
+                  <nav class="navbar navbar-expand-lg  rounded text-white"  style="margin-bottom: 150px; font-family:'Viaoda Libre', cursive;;">
+                      <div class="container-fluid">
+                          <li class="nav-item"  style="padding-right: 200px;">
+                              <a class="navbar-brand col-md-8 col-lg-8 me-10 px-10 text-withe" style="font-size:30px; font-weight: 900;"" href="#">CineOne</a>
+                          </li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Genero</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Aventuras</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                                <li><a class="dropdown-item" href="#">No- Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Drama</a></li>
+                                <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                                <li><a class="dropdown-item" href="#">Musical</a></li>
+                                <li><a class="dropdown-item" href="#">Suspense</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe"  href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peliculas</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Estrenos</a></li>
+                                <li><a class="dropdown-item" href="#">Ranking</a></li>
+                                <li><a class="dropdown-item" href="#">Mas vistas</a></li>
+                                <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                <li><a class="dropdown-item" href="#">Episodios</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#myModal">App</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  <h1 class="hecate">AVATAR 2</h1>
+                  <p class="hecate-text">"Esta es la historia de la familia Sully y lo que hace una persona para mantener esta unida.
+                    Jake y Neytiri tienen una familia en esta película, son obligados a abandonar su hogar, así que salen
+                    al exterior y exploran
+                    diferentes regiones de Pandora, pasando un tiempo en el agua, alrededor del agua, sobre el agua..."
+                  </p>
+                  <a class="btn btn-lg btn-primary bi-play-fill" href="#" style="border-radius: 25px; margin-right: 50px;">Ver pelicula</a>
+                  <a class="btn btn-lg btn-danger bi-app" style="border-radius: 25px;" data-bs-toggle="modal" data-bs-target="#myModal"> App</a>
+                </div>
+              </div>
+          </div>
+
+
+
+          <div class="carousel-item">
+            <video width="100%" height="1080" autoplay muted  src="/imgs/Doctors2.mp4"></video>
+            <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KREBGtEeW9U?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!-- <img src="imgs/pelis/strange.jpg" width="100%" height="100%">-->
+            <div class="container">
+                <div class="carousel-caption" style="top: 0px">
+                  <nav class="navbar navbar-expand-lg  rounded text-white"  style="margin-bottom: 150px; font-family:'Viaoda Libre', cursive;;">
+                      <div class="container-fluid">
+                          <li class="nav-item"  style="padding-right: 200px;">
+                              <a class="navbar-brand col-md-8 col-lg-8 me-10 px-10 text-withe" style="font-size:30px; font-weight: 900;"" href="#">CineOne</a>
+                          </li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Genero</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Aventuras</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                                <li><a class="dropdown-item" href="#">No- Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Drama</a></li>
+                                <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                                <li><a class="dropdown-item" href="#">Musical</a></li>
+                                <li><a class="dropdown-item" href="#">Suspense</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe"  href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peliculas</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Estrenos</a></li>
+                                <li><a class="dropdown-item" href="#">Ranking</a></li>
+                                <li><a class="dropdown-item" href="#">Mas vistas</a></li>
+                                <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                <li><a class="dropdown-item" href="#">Episodios</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#myModal">App</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  <h1 class="hecate">Doctor Strange </h1>
+                  <p class="hecate-text">«La puerta del multiverso, llena de misterio y locura, se abre. Ahora que Iron Man y 
+                    el Capitán América se han ido después de una feroz batalla de Vengadores: Endgame, se espera que el ex cirujano genio 
+                    y el mago más fuerte de todos, el Doctor Strange juega un papel activo como una figura central en los Vengadores. Sin 
+                    embargo, al usar su magia para manipular el tiempo y el espacio a voluntad
+                     con un hechizo prohibido que se considera el más peligroso, ha abierto la puerta a una misteriosa locura 
+                     llamada el multiverso....»
+                  </p>
+                  <a class="btn btn-lg btn-primary bi-play-fill" href="#" style="border-radius: 25px; margin-right: 50px;">Ver pelicula</a>
+                  <a class="btn btn-lg btn-danger bi-app" style="border-radius: 25px;" data-bs-toggle="modal" data-bs-target="#myModal"> App</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="carousel-item">
+            <video width="100%" height="1080" autoplay muted src="/imgs/Thor2.mp4"></video>
+            <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Go8nTmfrQd8?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!-- <img src="imgs/pelis/1.jpg" width="100%" height="100%">-->
+            <div class="container">
+                <div class="carousel-caption" style="top: 0px">
+                  <nav class="navbar navbar-expand-lg  rounded text-white"  style="margin-bottom: 150px; font-family:'Viaoda Libre', cursive;;">
+                      <div class="container-fluid">
+                          <li class="nav-item"  style="padding-right: 200px;">
+                              <a class="navbar-brand col-md-8 col-lg-8 me-10 px-10 text-withe" style="font-size:30px; font-weight: 900;"" href="#">CineOne</a>
+                          </li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Genero</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Acción</a></li>
+                                <li><a class="dropdown-item" href="#">Aventuras</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                                <li><a class="dropdown-item" href="#">No- Ficción</a></li>
+                                <li><a class="dropdown-item" href="#">Drama</a></li>
+                                <li><a class="dropdown-item" href="#">Fantasía</a></li>
+                                <li><a class="dropdown-item" href="#">Musical</a></li>
+                                <li><a class="dropdown-item" href="#">Suspense</a></li>
+                                <li><a class="dropdown-item" href="#">Terror</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe"  href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Peliculas</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Estrenos</a></li>
+                                <li><a class="dropdown-item" href="#">Ranking</a></li>
+                                <li><a class="dropdown-item" href="#">Mas vistas</a></li>
+                                <li><a class="dropdown-item" href="#">Peliculas</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-withe" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Series</a>
+                              <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item" href="#">Series</a></li>
+                                <li><a class="dropdown-item" href="#">Episodios</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#myModal">App</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  <h1 class="hecate">Thor: love and thunder</h1>
+                  <p class="hecate-text"> "El Dios del Truenoemprende un
+                     viaje que no se parece en nada a lo que se ha enfrentado hasta ahora: una búsqueda de la paz interior.
+                    Pero el retiro de Thor se ve interrumpido por un asesino galáctico conocido como Gorr el
+                     Carnicero de Dioses, que busca la extinción de los dioses. Para hacer frente a la amenaza,
+                     Thor solicita la ayuda del Rey Valkiria, de Korg  y de su ex novia Jane Foster que, para sorpresa de Thor, 
+                     empuña inexplicablemente su martillo mágico......"
+                  </p>
+                  <a class="btn btn-lg btn-primary bi-play-fill" href="#" style="border-radius: 25px; margin-right: 50px;">Ver pelicula</a>
+                  <a class="btn btn-lg btn-danger bi-app" style="border-radius: 25px;" data-bs-toggle="modal" data-bs-target="#myModal"> App</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- The Modal -->
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+
+        <!-- Modal body -->
+        <div class="modal-body">
+            <section class="featurettes bg-white text-dark">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <!-- Section Title -->
+                                <div class="title-wrap">
+                                    <h2 class="section-title">
+                                        <b>CINEMANGUS</b> APP<br> diferente a cualquier otra
+                                    </h2>
+                                    <p class="section-sub-title">
+                                        Nuestro aplicativo fue dieñado para todos <br>vive una nueva experiencia desde la palma de tu mano con nuestra app
+                                    </p>
+                                </div>
+                                <!-- End of Section Title -->
+                                <div class="featurettes-wrap text-left mb-4">
+                                    <div class="row featurettes-item">
+                                        <div class="col-md-4 offset-md-2 col-sm-6">
+                                            <div class="my-5">
+                                                <span class="lnr lnr-camera fs-40 color-primary"></span>
+                                            </div>
+                                            <h4 class="mb-2 h-20 p-5 ">Registrate</h4>
+                                            <p>Para poder acceder al aplicativo tendras que hacer un pequeño registro</p>
+                                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                                        <div class="col-md-4 offset-md-right-2 col-sm-6">
+                                            <img class="my-5" src="imgs/imagescine/imagenes del app/1.JPG"  height="370px" width="220px">
+                                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+                                    </div><!--/ .featurettes-item -->
+                                </div><!--/ .featurettes-wrap -->
+
+                                <div class="featurettes-wrap text-right">
+                                    <div class="row featurettes-item">
+                                        <div class="col-md-4 offset-md-2 col-sm-6">
+                                            <img class="my-4" src="imgs/imagescine/imagenes del app/2.JPG" height="370px" width="220px">
+                                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                                        <div class="col-md-4 offset-md-right-2 col-sm-6 mb-5">
+                                            <div class="my-4">
+                                                <span class="lnr lnr-bubble fs-40 color-primary"></span>
+                                            </div>
+                                            <h4 class="mb-4 h-20 p-5">Menu</h4>
+                                            <p>En el menu podras visualizar las distintas peliculas asi como tambien interaactuar con ellas</p>
+                                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                                    </div><!--/ .featurettes-item -->
+
+                                </div><!--/ .featurettes-wrap -->
+
+                                <div class="featurettes-wrap text-left mb-4">
+                                  <div class="row featurettes-item">
+                                      <div class="col-md-4 offset-md-2 col-sm-6">
+                                          <div class="my-5">
+                                              <span class="lnr lnr-camera fs-40 color-primary"></span>
+                                          </div>
+                                          <h4 class="mb-2 h-20 p-5 ">Peliculas</h4>
+                                          <p>Podras Seleccionar una pelicula  y visualizar su sinopsis detallada</p>
+                                      </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                                      <div class="col-md-4 offset-md-right-2 col-sm-6">
+                                          <img class="my-5" src="imgs/imagescine/imagenes del app/3.JPG"  height="370px" width="220px">
+                                      </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+                                  </div><!--/ .featurettes-item -->
+                              </div><!--/ .featurettes-wrap -->
+
+
+
+
+
+                                <div class="featurettes-wrap text-right">
+                                  <div class="row featurettes-item">
+                                      <div class="col-md-4 offset-md-2 col-sm-6">
+                                          <img class="my-4" src="imgs/imagescine/imagenes del app/4.JPG" height="370px" width="220px">
+                                      </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                                      <div class="col-md-4 offset-md-right-2 col-sm-6 mb-5">
+                                          <div class="my-4">
+                                              <span class="lnr lnr-bubble fs-40 color-primary"></span>
+                                          </div>
+                                          <h4 class="mb-4 h-20 p-5">Compra de entrada</h4>
+                                          <p>Aqui podras seleccionar el horario, la fecha  y la butaca  para luego pasar a comprarla</p>
+                                      </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                                  </div><!--/ .featurettes-item -->
+
+                              </div><!--/ .featurettes-wrap -->
+
+                              <div class="featurettes-wrap text-left mb-4">
+                                <div class="row featurettes-item">
+                                    <div class="col-md-4 offset-md-2 col-sm-6">
+                                        <div class="my-5">
+                                            <span class="lnr lnr-camera fs-40 color-primary"></span>
+                                        </div>
+                                        <h4 class="mb-2 h-20 p-5 ">Visualizacion de entrada</h4>
+                                        <p>Podras visualizar la informacion de la entrada previamente realizada y se generara tu qr para presentarlo al llegar a nuestro cine ☺</p>
+                                    </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                                    <div class="col-md-4 offset-md-right-2 col-sm-6">
+                                        <img class="my-5" src="imgs/imagescine/imagenes del app/5.JPG"  height="370px" width="220px">
+                                    </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+                                </div><!--/ .featurettes-item -->
+                            </div>
+
+
+
+
+                                <div class="app-text">
+                                    <div class="row featurettes-item">
+                                        <div class="col">
+                                            <h4 class="text-app">¿Listo para unirte a nuestra aplicación para tu experiencia social avanzada?</h4>
+                                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+                                        <div class="apps">
+                                           <li>
+                                            <a href="#0"><img class="btn-img my-4" src="imgs/app/appstore-btn.png" alt=""></a>
+                                            <a href="#0"><img class="btn-img" src="imgs/app/playstore-btn.png" alt=""></a>
+                                            <a href="app-release.apk"><img class="btn-img" src="imgs/app/apk.png" alt=""></a>
+                                           </li>
+
+                                        </div>
+                                    </div><!--/ .featurettes-item -->
+
+                                </div><!--/ .featurettes-wrap -->
+
+                            </div><!--/ .col-md-12 -->
+
+                        </div><!--/ .row -->
+                    </div>
+                </div><!--/ .container -->
+            </section>	
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+  <div class="featured-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="section-heading">
+            <h1 class="pdm-hecate text-white" style="font-size: 30px;">Peliculas nuevas</h1>
+            <div class="line-dec" style="width:500px"></div>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-12 ">
+          <div id="filters" class="button-group">
+            <button class="btn btn-primary text-white" data-filter="*">ULTIMAS</button>
+            <button class="btn btn-primary text-white" data-filter=".new">EXTRENOS</button>
+            <button class="btn btn-primary text-white" data-filter=".low">RANKING</button>
+            <button class="btn btn-primary text-white" data-filter=".high">MAS VISTAS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured container no-gutter">
+      <div class="row posts">
+          <div id="1" class="item new col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie12.jpeg"  height="350px">
+                <h4>Thor Love and Thunder</h4>
+              
+              </div>
+            </a>
+          </div>
+          <div id="2" class="item high col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie13.jpg" alt="Item 2" height="350px">
+                <h4>Jurasic world</h4>
+               
+              </div>
+            </a>
+          </div>
+          <div id="3" class="item low col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie14.jpg" alt="Item 1"  height="350px">
+                <h4>Avatar 2</h4>
+                
+              </div>
+            </a>
+          </div>
+          <div id="4" class="item low col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie10.jpg" alt="Item 3"  height="350px">
+                <h4>El Peso Del Talento</h4>
+                
+              </div>
+            </a>
+          </div>
+          <div id="5" class="item new col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie11.jpg" alt="Item 5" height="350px">
+                <h4>Asessino Sin Memoria</h4>
+               
+              </div>
+            </a>
+          </div>
+          <div id="6" class="item new low col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie9.jpg" alt="Item 1" height="350px">
+                <h4>LightYear</h4>
+                
+              </div>
+            </a>
+          </div>
+          <div id="7" class="item new high col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie8.jpg" alt="Item 2" height="350px">
+                <h4>TopGun</h4>
+              </div>
+            </a>
+          </div>
+          <div id="8" class="item high new col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie7.jpg" alt="Item 3" height="350px">
+                <h4>Doctor Strange</h4>
+              </div>
+            </a>
+          </div>
+          <div id="9" class="item new low col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie6.jpg" alt="Item 4" height="350px">
+                <h4>MoonFall</h4>
+               
+              </div>
+            </a>
+          </div>
+          <div id="8" class="item high new col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie5.jpg" alt="Item 3" height="350px">
+                <h4>Batman</h4>
+              </div>
+            </a>
+          </div>
+          <div id="8" class="item high new col-md-3">
+            <a class="link-pelis" href="#">
+              <div class="featured-item">
+                <img src="imgs/imagescine/movie4.jpg" alt="Item 3" height="350px">
+                <h4>Sonic 2</h4>
+              </div>
+            </a>
+          </div>
+      </div>
+  </div>
+
+  <div class="page-navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li class="current-page"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="featured-items">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <div class="section-heading text-withe ">
+                    <h1 class="pdm-hecate text-white" style="font-size: 30px;">Peliculas Sobresalientes</h1>
+                    <div class="line-dec" style="width:1000px"></div>
+                  </div>
+
+                </div>
+                <div class="col-md-12">
+                  <div class="owl-carousel owl-theme">
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie12.jpeg"  height="350px">
+                        <h4>Thor Love and Thunder</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie4.jpg" alt="Item 3" height="350px">
+                        <h4>Sonic 2</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie14.jpg" alt="Item 1"  height="350px">
+                        <h4>Avatar 2</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie5.jpg" alt="Item 3" height="350px">
+                <h4>Batman</h4>
+                      </div>
+                    </a> 
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">                        
+                <img src="imgs/imagescine/movie10.jpg" alt="Item 3"  height="350px">
+                <h4>El Peso Del Talento</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie9.jpg" alt="Item 1" height="350px">
+                        <h4>LightYear</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie8.jpg" alt="Item 2" height="350px">
+                        <h4>TopGun</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie1.jpg" alt="Item 2" height="350px">
+                        <h4>Morbius</h4>
+                      </div>
+                    </a>
+                    <a class="link-pelis" href="#">
+                      <div class="featured-item">
+                        <img src="imgs/imagescine/movie2.jpg" alt="Item 2" height="350px">
+                        <h4>Uncharted</h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container">
+      <div class="featured-items">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="section-heading text-withe ">
+                  <h1 class="pdm-hecate text-white" style="font-size: 30px;">Peliculas Destacadas</h1>
+                  <div class="line-dec" style="width:1000px"></div>
+                </div>
+
+              </div>
+              <div class="col-md-12">
+                <div class="owl-carousel owl-theme">
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/pelis/Jurassic world.jpg" alt="Item 1"  height="350px">
+                      <h4>Jurasic world</h4>
+                      
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie7.jpg" alt="Item 2" height="350px">
+                      <h4>Doctor Strange</h4>
+                      
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie4.jpg" alt="Item 3"  height="350px">
+                      <h4>Sonic 2</h4>
+                     
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie14.jpg" alt="Item 4"  height="350px">
+                      <h4>Avatar 2</h4>
+                     
+                    </div>
+                  </a> 
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie6.jpg" alt="Item 5" height="350px">
+                      <h4>Moonfall</h4>
+                      
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie5.jpg" alt="Item 1"  height="350px">
+                      <h4>Batman</h4>
+                      
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie9.jpg" alt="Item 2" height="350px">
+                      <h4>LightYear</h4>
+                      
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie2.jpg" alt="Item 3"  height="350px">
+                      <h4>uncharted</h4>
+                      
+                    </div>
+                  </a>
+                  <a class="link-pelis" href="#">
+                    <div class="featured-item">
+                      <img src="imgs/imagescine/movie1.jpg" alt="Item 4"  height="350px">
+                      <h4>Morbius</h4>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+
+
+
+
+
+
+      <!-- Featred Page Ends Here -->
+      <div class="footer text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="logo">
+                <img src="imgs/log.png" height="150px">
+              </div>
+            </div>s
+            <div class="col-md-12">
+              <div class="footer-menu ">
+                <ul>
+                  <li><a class="text-white" href="#">Inicio</a></li>
+                  <li><a class="text-white" href="#">CENTROS DE ATENCION</a></li>
+                  <li><a class="text-white" href="#">POLITICA Y PRIVACIDAD</a></li>
+                  <li><a class="text-white" href="#">NOSTROS</a></li>
+                  <li><a class="text-white"  href="#">CONTACTOS</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="social-icons">
+                <ul>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Ends Here -->
+      <!-- Sub Footer Starts Here -->
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2022 MANGUS SAC 
+                  - Siguenos en: <a rel="nofollow" href="https://www.facebook.com/StilReniun">FACEBOOK</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscribe Form Starts Here -->
+      <!-- Subscribe Form Ends Here -->
+      <
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+
+
+      <script language = "text/Javascript"> 
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t){                   //declaring the array outside of the
+        if(! cleared[t.id]){                      // function makes it static and global
+            cleared[t.id] = 1;  // you could use true and false, but that's more typing
+            t.value='';         // with more chance of typos
+            t.style.color='#fff';
+            }
+        }
+      </script>
+</body>
+</html>
+
