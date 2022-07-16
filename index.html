@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineMongus</title>
     <!-- CSS only -->
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -18,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <script src="index.js"></script>
+    
 </head>
 <body>
     <header>
@@ -31,9 +36,9 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-              <iframe width="100%" height="1080px" src="https://www.youtube.com/embed/5J57Hp_f-18?&autoplay=1 & controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <!-- <video width="100%" height="1080px" autoplay src="imgs/Avatar2.mp4"></video>
-            <video width= "100%" height="1000px" autoplay src="/imgs/Avatar2.mp4"></video>
+
+            
+            <video width= "100%" height="1080px" autoplay muted src="/imgs/Avatar2.mp4"></video>
             <!--
          <!-- <img src="imgs/pelis/avatar.jpg" width="100%" height="100%">-->
             <div class="container">
@@ -107,7 +112,7 @@
 
 
           <div class="carousel-item">
-            <video width="100%" height="1080" autoplay muted  src="/imgs/Doctors2.mp4"></video>
+            <video width="100%" height="1080px" autoplay muted  src="/imgs/Doctors2.mp4"></video>
             <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KREBGtEeW9U?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            <!-- <img src="imgs/pelis/strange.jpg" width="100%" height="100%">-->
             <div class="container">
@@ -181,7 +186,7 @@
           </div>
 
           <div class="carousel-item">
-            <video width="100%" height="1080" autoplay muted src="/imgs/Thor2.mp4"></video>
+            <video width="100%" height="1080px" autoplay loop src="/imgs/Thor2.mp4"></video>
             <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Go8nTmfrQd8?&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            <!-- <img src="imgs/pelis/1.jpg" width="100%" height="100%">-->
             <div class="container">
@@ -269,12 +274,12 @@
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+      <div class="modal-content" style="background-image:url(/imgs/fondos/marcofondo2.gif); background-size: cover;"">
 
 
         <!-- Modal body -->
         <div class="modal-body">
-            <section class="featurettes bg-white text-dark">
+            <div class="featurettes bg-white text-dark">
                 <div class="container">
                     <div class="section-content">
                         <div class="row">
@@ -386,7 +391,9 @@
                                             <a href="#0"><img class="btn-img" src="imgs/app/playstore-btn.png" alt=""></a>
                                             <a href="app-release.apk"><img class="btn-img" src="imgs/app/apk.png" alt=""></a>
                                            </li>
-
+                                           <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                          </div>
                                         </div>
                                     </div><!--/ .featurettes-item -->
 
@@ -397,24 +404,14 @@
                         </div><!--/ .row -->
                     </div>
                 </div><!--/ .container -->
-            </section>	
+            </div>
+            
         </div>
         <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
+        
       </div>
     </div>
   </div>
-
-  
-
-
-
-
-
-
-
 
   <div class="featured-page">
     <div class="container">
@@ -695,7 +692,7 @@
                   </a>
                   <a class="link-pelis" href="#">
                     <div class="featured-item">
-                      <img src="imgs/imagescine/movie1.jpg" alt="Item 4"  height="350px">
+                      <img class="rounded-circle" src="imgs/imagescine/movie1.jpg" alt="Item 4"  height="350px">
                       <h4>Morbius</h4>
                       
                     </div>
@@ -706,12 +703,240 @@
           </div>
         </div>
   </div>
+  
 
+<!--cards-->
+  <div class="container">
+    <div class="featured-items">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <div class="section-heading text-withe ">
+                <h1 class="pdm-hecate text-white" style="font-size: 30px;">Developers</h1>
+                <div class="line-dec" style="width:1000px"></div>
+              </div>
+              <section class="">
+    
+                <div class="swiper mySwiper container">
+                  <div class="swiper-wrapper content">
+              
+                    <div class="swiper-slide card" >
+                      <div class="card-content">
+                        <div class="image">
+                          <img src="imgs/Developers/Ash.jpg" alt="">
+                        </div>
+              
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+              
+                        <div class="name-profession">
+                          <span class="name" >Ashley Villanueva</span>
+                          <span class="profession">Developer</span>
+                        </div>
+              
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+              
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src="imgs/Developers/Jean.JPG" alt="">
+                        </div>
+            
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+            
+                        <div class="name-profession">
+                          <span class="name">Jean Aranda</span>
+                          <span class="profession">Web Developer</span>
+                        </div>
+            
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src="imgs/Developers/Dennis.jpeg" alt="">
+                        </div>
+            
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+            
+                        <div class="name-profession">
+                          <span class="name">Dennis Huaranga</span>
+                          <span class="profession">Developer</span>
+                        </div>
+            
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src="imgs/Developers/Juan.jpeg" alt="">
+                        </div>
+            
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+            
+                        <div class="name-profession">
+                          <span class="name">Juan Solis</span>
+                          <span class="profession">Developer</span>
+                        </div>
+            
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img src="imgs/Developers/Luis.jpeg" alt="">
+                        </div>
+            
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+            
+                        <div class="name-profession">
+                          <span class="name">Luis Rondan</span>
+                          <span class="profession">Developer</span>
+                        </div>
+            
+                        <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+            
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">Github 
+                    
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="imgs/Developers/Angel.jpeg" alt="">
+            </div>
 
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
 
+            <div class="name-profession">
+              <span class="name">Angel Mendoza</span>
+              <span class="profession">Developer</span>
+            </div>
 
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
 
-
+            <div class="button">
+              <button class="aboutMe">About Me</button>
+              <button class="hireMe">Github</button>
+            </div>
+          </div>
+        </div>
+                  </div>
+                </div>
+              
+                <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+              </section>
+            </div>
+            <!-- Boton sobre el app-->
+         <div class="footer text-white">
+           <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="logo">
+                  <div class="container mt-3" data-bs-toggle="modal" data-bs-target="#myModalVideo" style="margin-top: 50px">
+                    <div class="section-heading text-withe ">
+                      <h1 class="pdm-hecate text-white" style="font-size: 30px;">Mas sobre el app</h1>
+                      
+                    </div>
+                    
+                    <button  type="button" class="btn btn-primary active" style="font-size: 30px;">Como se hizo</button>
+                    
+                   
+                  </div>
+              </div>
+            </div>
+            </div>  
+           </div>          
+            </div>
 
 
       <!-- Featred Page Ends Here -->
@@ -722,7 +947,7 @@
               <div class="logo">
                 <img src="imgs/log.png" height="150px">
               </div>
-            </div>s
+            </div>
             <div class="col-md-12">
               <div class="footer-menu ">
                 <ul>
@@ -761,6 +986,46 @@
         </div>
       </div>
 
+      <!-- The Modal videos -->
+<div class="modal" id="myModalVideo">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="background-image:url(/imgs/fondos/fondomarco1.gif);background-repeat: no-repeat; background-size: cover;">
+
+     
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="title">
+         <div class="row">
+         <h1> App CineOne</h1>
+         <h2>Desarollo del app</h2>
+       </div>
+       <div class="featurettes-wrap text-left mb-4">
+        <div class="row featurettes-item">
+            <div class="col-md-4 offset-md-2 col-sm-6" >
+              <video  src="/imgs/Thor2.mp4" aria-setsize="center" controls width="500px" height="350px" ></video>
+            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+            <div class=" offset-md-right-2 col-sm-6">
+              
+                
+            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+        </div><!--/ .featurettes-item -->
+    </div><!--/ .featurettes-wrap -->
+       
+      </div>
+      
+      <img src="imgs/fondos/minions-dance.gif" aria-setsize="text center" alt="">
+    </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
       <!-- Subscribe Form Starts Here -->
       <!-- Subscribe Form Ends Here -->
       <
@@ -786,6 +1051,28 @@
             }
         }
       </script>
+      <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
 </body>
 </html>
 
